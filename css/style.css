@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Logo */
+.logo {
+  width: 100%;
+}
+
+/* Menu */
+.tm-main-nav {
+  margin-bottom: 45px;
+}
+
+/* Galeria */
+.work,
+.mail {
+  color: white;
+}
+
+.mail:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.work:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* Contacto */
+.mail {
+  background-color: grey;
+  padding: 4px;
+}
+
+.gif {
+  width: 75%;
+}
