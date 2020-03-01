@@ -48,7 +48,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#talk" class="nav-link">
+                  <a href="#contacto" class="nav-link">
                     <span class="d-inline-block mr-3">Contacto</span>
                     <span class="d-inline-block tm-white-rect"></span>
                   </a>
@@ -183,7 +183,7 @@
                             Envíame un mail o un mensaje en las redes que aparecen en el menú de la izquierda y lo armamos.
                         </p>
                         <p class="mb-3">
-                          <a class="mail" href="mailto:ignacio.encina.garcia@gmail.com" ?subject="Diseño Web">ignacio.encina.garcia@gmail.com</a>
+
                         </p>
                         <img src="img/mp.png" alt="Mercado Pago">
                     </div>
@@ -191,7 +191,21 @@
                 </div>
                 <div class="col-xl-6 mb-5">
                   <div class="tm-contact-form-wrap">
-                    <img class="gif" src="img/mail.gif" alt="mail">
+                    <form action="enviar.php" method="POST" class="tm-contact-form">
+                        <div class="form-group">
+                          <input type="email" id="email" name="email" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="E-mail" required />
+                        </div>
+
+                        <div class="form-group">
+                          <textarea rows="4" id="message" name="mensaje" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Dejame aqui tu mensaje" required></textarea>
+                        </div>
+
+                        <div class="form-group mb-0">
+                          <button type="submit" class="btn rounded-0 d-block ml-auto tm-btn-primary">
+                            Enviar
+                          </button>
+                        </div>
+                      </form>
                   </div>
                 </div>
               </section>
