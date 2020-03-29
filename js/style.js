@@ -1,3 +1,13 @@
+/* Envió de Email
+ -------------------------------------------------------*/
+let formBtn = document.getElementById("formBtn");
+formBtn.onclick = function() {
+  Swal.fire({
+    title: "Mensaje Enviado!",
+    icon: "success"
+  });
+};
+
 $(window).on("scroll", function() {
   var bodyScroll = $(window).scrollTop(),
     navbar = $(".navbar");
