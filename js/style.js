@@ -1,4 +1,14 @@
-$(window).on("scroll", function () {
+/* Envió de Email
+ -------------------------------------------------------*/
+let formBtn = document.getElementById("formBtn");
+formBtn.onclick = function() {
+  Swal.fire({
+    title: "Mensaje Enviado!",
+    icon: "success"
+  });
+};
+
+$(window).on("scroll", function() {
   var bodyScroll = $(window).scrollTop(),
     navbar = $(".navbar");
 
@@ -11,7 +21,7 @@ $(window).on("scroll", function () {
   }
 });
 
-$(window).on("load", function () {
+$(window).on("load", function() {
   var bodyScroll = $(window).scrollTop(),
     navbar = $(".navbar");
 
@@ -30,7 +40,7 @@ $(window).on("load", function () {
     scrollTime: 900, // how long (in ms) the animation takes
     activeClass: "active", // class given to the active nav element
     onPageChange: null, // function(pageIndex) that is called when page is changed
-    topOffset: -63,
+    topOffset: -63
   });
 
   /* isotope
@@ -39,18 +49,21 @@ $(window).on("load", function () {
   $(".gallery").isotope({
     // options
     itemSelector: ".item-img",
-    transitionDuration: "0.5s",
+    transitionDuration: "0.5s"
   });
 
   /* filter items on button click
   -------------------------------------------------------*/
-  $(".filtering").on("click", "button", function () {
+  $(".filtering").on("click", "button", function() {
     var filterValue = $(this).attr("data-filter");
 
     $gallery.isotope({ filter: filterValue });
   });
 
-  $(".filtering").on("click", "button", function () {
-    $(this).addClass("active").siblings().removeClass("active");
+  $(".filtering").on("click", "button", function() {
+    $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
   });
 });
