@@ -4,10 +4,10 @@ $(window).on("scroll", function () {
 
   if (bodyScroll > 130) {
     navbar.addClass("nav-scroll");
-    $(".navbar-logo img").attr("src", "img/logo-black.png");
+    $(".navbar-logo img").attr("src", "img/code.png");
   } else {
     navbar.removeClass("nav-scroll");
-    $(".navbar-logo img").attr("src", "img/logo-white.png");
+    $(".navbar-logo img").attr("src", "img/code.png");
   }
 });
 
@@ -17,10 +17,10 @@ $(window).on("load", function () {
 
   if (bodyScroll > 130) {
     navbar.addClass("nav-scroll");
-    $(".navbar-logo img").attr("src", "img/logo-black.png");
+    $(".navbar-logo img").attr("src", "img/code.png");
   } else {
     navbar.removeClass("nav-scroll");
-    $(".navbar-logo img").attr("src", "img/logo-white.png");
+    $(".navbar-logo img").attr("src", "img/code.png");
   }
 
   /* smooth scroll
