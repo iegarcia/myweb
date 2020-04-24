@@ -2,7 +2,6 @@
 require_once("user.php");
 
 $email = trim($_POST['email']);
-// filter_var($email, FILTER_VALIDATE_EMAIL);
 $asunto = trim($_POST['subject']);
 $mensaje = $_POST['message'];
 $para = "ignacio.encina.garcia@gmail.com";
@@ -13,9 +12,6 @@ $res = '
     <title>Mensaje recibido</title>
   </head>
   <body>
-    <center>
-      <img src="https://ijegdesign.com/img/logo-black.png" alt="logo" />
-    </center>
     <p>Hola!</p>
     <p>Gracias por contactarte con nosotros.</p>
     <p>Recibimos tu mensaje y nos comunicaremos contigo a la brevedad.</p>
@@ -29,7 +25,7 @@ if (!empty($email)) {
   $enviar = mail($para, $asunto, $mensaje, "$email");
   $user = mail($email, $asunto, $res, $cabeceras);
 }
-if (!$enviar) {
+if ($enviar) {
 ?>
   <script>
     window.onload = function() {
@@ -53,9 +49,6 @@ if (!$enviar) {
   </script>
 <?php
 }
-?>
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -395,12 +388,12 @@ if (!$enviar) {
               </div>
             </div>
             <div class="info-box">
-              <div class="icon"><i class="fab fa-facebook"></i></div>
+              <div class="icon"><i class="fas fa-envelope"></i></div>
               <div class="content">
-                <h4>Facebook</h4>
+                <h4>Mail</h4>
                 <p>
-                  <a href="https://www.facebook.com/ijedesi/" target="_blank">
-                    facebook.com/ijedesi/
+                  <a href="mailto:ignacio.encina.garcia@gmail.com">
+                    ignacio.encina.garcia@gmail.com
                   </a>
                 </p>
               </div>
