@@ -15,6 +15,7 @@ $res = '
     <p>Hola!</p>
     <p>Gracias por contactarte con nosotros.</p>
     <p>Recibimos tu mensaje y nos comunicaremos contigo a la brevedad.</p>
+    <p>Nuestros horarios de atencion son de Lunes a Viernes de 9 a 18.</p>
     <br />
     <br />
     <cite>Javier</cite>
@@ -72,7 +73,7 @@ if ($enviar) {
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand navbar-logo" data-scroll-nav="0" href="">
+      <a class="navbar-brand navbar-logo" href="index.html">
         <img src="img/logo-white.png" alt="logo" class="logo" />
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
