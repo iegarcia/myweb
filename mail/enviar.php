@@ -1,6 +1,6 @@
 <?php
 require_once("user.php");
-require_once("partials.php");
+require_once("../partials.php");
 
 $email = isset($_POST['email']);
 $validarEmail = filter_var($email, FILTER_VALIDATE_EMAIL);
