@@ -1,7 +1,5 @@
 <?php
-require_once("partials.php");
-?>
-
+require_once("../partials/header.php");?>
 
 <!-- Banner Image -->
 <div class="banner text-center" data-scroll-index="0" id="inicio">
@@ -353,3 +351,6 @@ require_once("partials.php");
     </div>
   </div>
 </div>
+
+<?php
+require_once("../partials/footer.php");

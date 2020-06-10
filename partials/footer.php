@@ -10,6 +10,7 @@
 <!-- isotope.pkgd.min js -->
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/style.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 </body>
 
 </html>

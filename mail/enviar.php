@@ -1,6 +1,6 @@
 <?php
 require_once("user.php");
-require_once("../partials.php");
+require_once("../partials/header.php");
 
 $email = isset($_POST['email']);
 $validarEmail = filter_var($email, FILTER_VALIDATE_EMAIL);
@@ -69,3 +69,6 @@ if ($enviar) {
 <h2 class="text-center">Este Apartado se encuentra en construccion. Disculpe las molestias.</h2>
 <br>
 <img src="https://66.media.tumblr.com/a444d518efc70b361d490f74f07cab97/tumblr_mfuok8vlZt1qeweuno1_r1_500.gifv" alt="Working">
+
+<?php
+require_once("../partials/footer.php");
