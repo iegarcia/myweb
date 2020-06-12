@@ -1,58 +1,30 @@
 <?php
+require_once("../functions.php");
 require_once("user.php");
 require_once("../partials/header.php");
 
-$email = isset($_POST['email']);
-$validarEmail = filter_var($email, FILTER_VALIDATE_EMAIL);
-$asunto = $_POST['subject'];
-$mensaje = $_POST['message'];
-$para = "ignacio.encina.garcia@gmail.com";
-
-if ($email && $validarEmail) {
-	$enviar = mail($para, $asunto, $mensaje, "$email"); //Mail a mi casilla
-	$user = mail($email, $asunto, $res, $cabeceras); //Mail al cliente
-} else {
-?>
-	<script type="text/javascript">
-		window.onload = function() {
-			Swal.fire({
-				icon: 'error',
-				title: 'Oops...',
-				text: 'Algo salió mal!'
-			})
-		};
-	</script>
-<?php
+$emailRecibido = isset($_POST['email']);
+if ($emailRecibido) {
+	$email = $_POST['email'];
+	validarEmail($email);
 }
 
-if ($enviar) {
-?>
-	<script>
-		window.onload = function() {
-			Swal.fire({
-				title: "Mensaje Enviado!",
-				icon: "success"
-			});
-		}
-	</script>
-<?php
+$asuntoValido = isset($_POST['subject']);
+$mensajeValido = isset($_POST['message']);
+$asunto = $asuntoValido;
+$mensaje = $mensajeValido;
+
+$destinatario = "ignacio.encina.garcia@gmail.com";
+
+if (!enviarCorreo($destinatario, $asunto, $mensaje, $email, $res, $cabeceras)) {
+	dispararError();
 } else {
-?>
-	<script type="text/javascript">
-		window.onload = function() {
-			Swal.fire({
-				icon: 'error',
-				title: 'Oops...',
-				text: 'Algo salió mal!'
-			})
-		};
-	</script>
-<?php
+	envioCorrecto();
 }
 ?>
 
 <!-- Banner Image -->
-<div class="banner text-center" data-scroll-index="0" id="inicio">
+<div class="banner text-center">
 	<div class="banner-overlay">
 		<div class="container">
 			<h1>Desarrollo Web Full Stack</h1>
@@ -66,7 +38,8 @@ if ($enviar) {
 	</div>
 </div>
 <br>
-<h2 class="text-center">Este Apartado se encuentra en construccion. Disculpe las molestias.</h2>
+<h2 class="text-center">Su mensaje ha sido enviado correctamente</h2>
+<h3 class="text-center">Este Apartado se encuentra en construccion. Disculpe las molestias.</h3>
 <br>
 <img src="https://66.media.tumblr.com/a444d518efc70b361d490f74f07cab97/tumblr_mfuok8vlZt1qeweuno1_r1_500.gifv" alt="Working">
 

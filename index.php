@@ -1,5 +1,5 @@
 <?php
-require_once("../partials/header.php");?>
+require_once("partials/header.php"); ?>
 
 <!-- Banner Image -->
 <div class="banner text-center" data-scroll-index="0" id="inicio">
@@ -17,8 +17,6 @@ require_once("../partials/header.php");?>
       </p>
       <a href="" data-scroll-nav="4" class="banner-btn">Pedí ya tu presupuesto!</a>
     </div>
-    <p>Desliza</p>
-    <img src="img/logo.gif" alt="">
   </div>
 </div>
 <!-- End Banner Image -->
@@ -329,18 +327,17 @@ require_once("../partials/header.php");?>
                 </div>
                 <div class="col-lg-12 form-group">
                   <textarea id="form_message" name="message" class="form-control" placeholder="Mensaje" rows="4" required data-error="Déjame tu mensaje"></textarea>
-                  <div class="help-block with-errors"></div>
                 </div>
                 <div class="col-lg-12 text-center">
-                  <button type="submit" class="bttn g-recaptcha" data-sitekey="6LdNFqMZAAAAAGYAu4pvuSHGQJFoewXgo89Wec5z" data-callback='onSubmit' id="formBtn">
+                  <button type="submit" class="bttn" id="formBtn">
                     Enviar
                   </button>
 
-                  <script>
+                  <!-- <script>
                     function onSubmit(token) {
                       document.getElementById("formBtn").submit();
                     }
-                  </script>
+                  </script> -->
 
                 </div>
               </div>
@@ -353,4 +350,4 @@ require_once("../partials/header.php");?>
 </div>
 
 <?php
-require_once("../partials/footer.php");
+require_once("partials/footer.php");

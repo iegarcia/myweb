@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
   <!-- Navbar -->
