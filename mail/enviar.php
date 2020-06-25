@@ -11,8 +11,12 @@ if ($emailRecibido) {
 
 $asuntoValido = isset($_POST['subject']);
 $mensajeValido = isset($_POST['message']);
-$asunto = $asuntoValido;
-$mensaje = $mensajeValido;
+if ($asuntoValido && $mensajeValido) {
+	$asunto = $_POST['subject'];
+	$mensaje = $_POST['message'];
+} else {
+	dispararError();
+}
 
 $destinatario = "ignacio.encina.garcia@gmail.com";
 
@@ -39,9 +43,9 @@ if (!enviarCorreo($destinatario, $asunto, $mensaje, $email, $res, $cabeceras)) {
 </div>
 <br>
 <h2 class="text-center">Su mensaje ha sido enviado correctamente</h2>
-<h3 class="text-center">Este Apartado se encuentra en construccion. Disculpe las molestias.</h3>
+<a class="btn btn-success" href="https://ijegdesign.com/#contacto">Volver Atras</a>
 <br>
+<h3 class="text-center">Este Apartado se encuentra en construccion. Disculpe las molestias.</h3>
 <img src="https://66.media.tumblr.com/a444d518efc70b361d490f74f07cab97/tumblr_mfuok8vlZt1qeweuno1_r1_500.gifv" alt="Working">
-
 <?php
 require_once("../partials/footer.php");

@@ -23,7 +23,7 @@ require_once("partials/header.php"); ?>
 
 <!-- About -->
 
-<div class="about-us section-padding" data-scroll-index="1" id="acerca">
+<div class="section-padding" data-scroll-index="1" id="acerca">
   <div class="container">
     <div class="row">
       <div class="col-md-12 section-title text-center">
@@ -65,7 +65,7 @@ require_once("partials/header.php"); ?>
 <!-- End About -->
 
 <!-- Services -->
-<div class="services section-padding bg-grey" data-scroll-index="2" id="servicios">
+<div class="section-padding bg-grey" data-scroll-index="2" id="servicios">
   <div class="container">
     <div class="row">
       <div class="col-md-12 section-title text-center">
@@ -145,7 +145,7 @@ require_once("partials/header.php"); ?>
 <!-- End Services -->
 
 <!-- Gallery -->
-<div class="portfolio section-padding" data-scroll-index="3" id="trabajos">
+<div class="section-padding" data-scroll-index="3" id="trabajos">
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12 section-title text-center">
@@ -243,8 +243,8 @@ require_once("partials/header.php"); ?>
 <!-- End Gallery -->
 
 <!-- Contact -->
-<div class="contact section-padding" data-scroll-index="4" id="contacto">
-  <div class="container">
+<div class="section-padding" data-scroll-index="4">
+  <div class="container" id="contacto">
     <div class="row">
       <div class="col-md-12 section-title text-center">
         <h3>Ponerse en contacto</h3>
@@ -329,16 +329,9 @@ require_once("partials/header.php"); ?>
                   <textarea id="form_message" name="message" class="form-control" placeholder="Mensaje" rows="4" required data-error="Déjame tu mensaje"></textarea>
                 </div>
                 <div class="col-lg-12 text-center">
-                  <button type="submit" class="bttn" id="formBtn">
+                  <button type="submit" class="g-recaptcha bttn" data-sitekey="6Lc4iKkZAAAAAMnAptgdOnBGPLV6L3VI00sjd-Gd" data-callback='onSubmit' id="formBtn">
                     Enviar
                   </button>
-
-                  <!-- <script>
-                    function onSubmit(token) {
-                      document.getElementById("formBtn").submit();
-                    }
-                  </script> -->
-
                 </div>
               </div>
             </div>
