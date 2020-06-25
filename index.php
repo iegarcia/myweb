@@ -329,16 +329,9 @@ require_once("partials/header.php"); ?>
                   <textarea id="form_message" name="message" class="form-control" placeholder="Mensaje" rows="4" required data-error="Déjame tu mensaje"></textarea>
                 </div>
                 <div class="col-lg-12 text-center">
-                <button type="submit" class="g-recaptcha bttn" data-sitekey="6Lc4iKkZAAAAAMnAptgdOnBGPLV6L3VI00sjd-Gd" data-callback='onSubmit' id="formBtn">
+                <button type="submit" class="bttn" id="formBtn">
                     Enviar
                   </button>
-
-                  <!-- <script>
-                    function onSubmit(token) {
-                      document.getElementById("formBtn").submit();
-                    }
-                  </script> -->
-
                 </div>
               </div>
             </div>
