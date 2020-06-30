@@ -67,6 +67,8 @@ try {
 			<img src="https://66.media.tumblr.com/a444d518efc70b361d490f74f07cab97/tumblr_mfuok8vlZt1qeweuno1_r1_500.gifv" alt="homer">
 		</div>
 	</div>
+
+	<script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 </body>
 
 </html>
