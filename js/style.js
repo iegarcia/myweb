@@ -26,7 +26,7 @@ $(window).on("load", function () {
   /* smooth scroll
   -------------------------------------------------------*/
   $.scrollIt({
-    easing: "swing", // the easing function for animation
+    easing: "linear", // the easing function for animation
     scrollTime: 900, // how long (in ms) the animation takes
     //activeClass: "active", // class given to the active nav element
     onPageChange: null, // function(pageIndex) that is called when page is changed

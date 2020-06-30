@@ -306,7 +306,7 @@ require_once("partials/header.php"); ?>
       <div class="col-lg-7 col-md-8">
         <div class="contact-form">
           <form class="form" id="contact-form" method="post" action="mail/enviar.php" data-toggle="validator">
-            <div class="controls ">
+            <div class="controls">
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
@@ -328,8 +328,9 @@ require_once("partials/header.php"); ?>
                 <div class="col-lg-12 form-group">
                   <textarea id="form_message" name="message" class="form-control" placeholder="Mensaje" rows="4" required data-error="Déjame tu mensaje"></textarea>
                 </div>
+                <div class="g-recaptcha controls" data-sitekey="6Lfa76kZAAAAANxFbFRp5w264VlrTmSgN9N8Lh5c"></div>
                 <div class="col-lg-12 text-center">
-                <button type="submit" class="bttn" id="formBtn">
+                  <button type="submit" class="bttn" id="formBtn">
                     Enviar
                   </button>
                 </div>
