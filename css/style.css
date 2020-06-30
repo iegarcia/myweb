@@ -467,6 +467,18 @@ h6 {
   border: none;
 }
 
+/* Post-Contacto */
+.img-center {
+  justify-content: center;
+}
+.img-work {
+  width: 100%;
+}
+
+.msj-error {
+  font-size: larger;
+}
+
 @media all and (max-width: 991px) {
   .navbar .navbar-collapse {
     overflow: auto;
