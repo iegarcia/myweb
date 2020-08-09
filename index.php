@@ -2,7 +2,7 @@
 require_once("partials/header.php"); ?>
 
 <!-- Banner Image -->
-<div class="banner text-center" data-scroll-index="0" id="inicio">
+<div class="banner text-center" id="inicio">
   <div class="banner-overlay">
     <img src="img/code.png" alt="">
     <div class="container">
@@ -15,7 +15,7 @@ require_once("partials/header.php"); ?>
         servicios, o dejar tu marca. <br />
         Páginas personales, blogs, pymes, e-commerce, ecommerce etc.
       </p>
-      <a href="" data-scroll-nav="4" class="banner-btn">Pedí ya tu presupuesto!</a>
+      <a href="#contacto" class="banner-btn">Pedí ya tu presupuesto!</a>
     </div>
   </div>
 </div>
@@ -23,7 +23,7 @@ require_once("partials/header.php"); ?>
 
 <!-- About -->
 
-<div class="about-us section-padding" data-scroll-index="1" id="acerca">
+<div class="about-us section-padding" id="acerca">
   <div class="container">
     <div class="row">
       <div class="col-md-12 section-title text-center">
@@ -38,17 +38,17 @@ require_once("partials/header.php"); ?>
               Hola! Mi nombre es Ignacio Encina García y soy Desarrollador
               Web Full Stack.<br />
               Mi primer encuentro con la programación fue en un centro donde
-              presentabas tu idea y te ayudaban desarrollar la misma y al
+              presentabas tu idea y te ayudaban desarrollarla, con el paso del tiempo fui adquriendo conocimiento relacionado al desarrollo web, al
               año comencé a ayudar a desarrollar ideas en dicho centro
-              también. Algunos años después decidí seguir y hacer el curso
-              de Full Stack en Digital House.
+              también. Algunos años después decidí seguir adelante y profundizar en esos conocimientos adquiridos e hice el curso
+              de Desarrollador Web Full Stack en Digital House.
             </p>
             <p>
               Actualmente tengo sitios diseñados y siempre estoy en busca de
               conocimientos nuevos, mejoras o adaptaciones acerca de cómo el
               sitio web puede empezar siendo un simple grupo de líneas que
               conforman un párrafo y un par de botones, para luego terminar
-              siendo adaptable a dispositivos con galerías increíbles y
+              siendo adaptable a dispositivos moviles y asu vez contar con galerías increíbles y
               efectos espectaculares.
             </p>
           </div>
@@ -65,7 +65,7 @@ require_once("partials/header.php"); ?>
 <!-- End About -->
 
 <!-- Services -->
-<div class="services section-padding bg-grey" data-scroll-index="2" id="servicios">
+<div class="services section-padding bg-grey" id="servicios">
   <div class="container">
     <div class="row">
       <div class="col-md-12 section-title text-center">
@@ -145,7 +145,7 @@ require_once("partials/header.php"); ?>
 <!-- End Services -->
 
 <!-- Gallery -->
-<div class="portfolio section-padding" data-scroll-index="3" id="trabajos">
+<div class="portfolio section-padding" id="trabajos">
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12 section-title text-center">
@@ -243,7 +243,7 @@ require_once("partials/header.php"); ?>
 <!-- End Gallery -->
 
 <!-- Contact -->
-<div class="contact section-padding" data-scroll-index="4" id="contacto">
+<div class="contact section-padding" id="contacto">
   <div class="container">
     <div class="row">
       <div class="col-md-12 section-title text-center">
@@ -310,27 +310,22 @@ require_once("partials/header.php"); ?>
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input id="form_name" type="text" name="name" placeholder="Name *" required data-error="Nombre requerido." />
-                    <div class="help-block with-errors"></div>
+                    <input id="form_email" type="email" name="email" placeholder="Email *" data-error="Email valido requerido." />
+                    <div id="emailError" class="alert-danger"></div>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input id="form_email" type="email" name="email" placeholder="Email *" required data-error="Email valido requerido." />
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input id="form_subject" type="text" name="subject" placeholder="Asunto" />
+                    <input id="form_subject" type="text" name="subject" placeholder="Asunto" required />
                   </div>
                 </div>
                 <div class="col-lg-12 form-group">
-                  <textarea id="form_message" name="message" class="form-control" placeholder="Mensaje" rows="4" required data-error="Déjame tu mensaje"></textarea>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Mensaje" rows="4" required></textarea>
                 </div>
-                <div class="g-recaptcha controls" data-sitekey="6Lfa76kZAAAAANxFbFRp5w264VlrTmSgN9N8Lh5c"></div>
+                <div class="g-recaptcha controls" data-sitekey="6Lfa76kZAAAAANxFbFRp5w264VlrTmSgN9N8Lh5c" data-callback="recaptchaCallback">
+                </div>
                 <div class="col-lg-12 text-center">
-                  <button type="submit" class="bttn" id="formBtn">
+                  <button type="submit" class="bttn" id="formBtn" disabled>
                     Enviar
                   </button>
                 </div>

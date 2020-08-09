@@ -21,7 +21,6 @@ try {
 		$asunto = $_POST['subject'];
 		$mensaje = $_POST['message'];
 	} else {
-		mostrarError();
 	}
 
 	$destinatario = "ignacio.encina.garcia@gmail.com";

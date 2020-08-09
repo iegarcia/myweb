@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Diseño y Desarrollo de sitios web adaptado a sus necesidades, adaptable a celular. Páginas personales, blogs, pymes, e-commerce, ecommerce, etc." />
-  <meta name="keywords" content="web design, web developer, desarrollador web, diseño, web, full stack developer, html, css, javascript, js, react, php, programacion, programación, laravel, git, github" />
+  <meta name="keywords" content="web design, web developer, desarrollador web, diseño, web, full stack developer, html, css, javascript, js, react, php, programacion, programación, laravel, git, github, responsive, celular" />
 
   <title>IJEG Design | Diseño y Desarrollo Web</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 </head>
 

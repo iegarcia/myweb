@@ -1,3 +1,42 @@
+const form = document.querySelector(".form");
+const btn = document.getElementById("formBtn");
+const elementos = form.elements;
+const cant = elementos.length - 2;
+
+function recaptchaCallback() {
+  btn.removeAttribute("disabled");
+  comprobarCampos();
+}
+
+function comprobarCampos() {
+  for (let i = 0; i <= cant; i++) {
+    if (elementos[i].value === "") {
+      form.onsubmit = function (event) {
+        event.preventDefault();
+        dispararError();
+        resaltarErrores();
+      };
+    }
+  }
+}
+
+console.log(emailError);
+function resaltarErrores() {
+  //TODO Mostrar carteles rojos con posibles errores
+  const emailError = document.getElementById("emailError");
+}
+
+function dispararError() {
+  Swal.fire({
+    icon: "error",
+    title: "Oops...Algo salio mal!",
+    text:
+      "Verifique que los datos sean validos y hayan sido cargados correctamente",
+  });
+}
+
+/* change navbar status on scroll
+-------------------------------------------------------*/
 $(window).on("scroll", function () {
   var bodyScroll = $(window).scrollTop(),
     navbar = $(".navbar");
@@ -22,16 +61,6 @@ $(window).on("load", function () {
     navbar.removeClass("nav-scroll");
     $(".navbar-logo img").attr("src", "img/code.png");
   }
-
-  /* smooth scroll
-  -------------------------------------------------------*/
-  $.scrollIt({
-    easing: "linear", // the easing function for animation
-    scrollTime: 900, // how long (in ms) the animation takes
-    //activeClass: "active", // class given to the active nav element
-    onPageChange: null, // function(pageIndex) that is called when page is changed
-    topOffset: -63,
-  });
 
   /* isotope
   -------------------------------------------------------*/
